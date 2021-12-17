@@ -1,2 +1,1 @@
-# MAD_assignment
- 
+# Assignment for Mobile Application Development course
