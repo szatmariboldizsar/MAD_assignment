@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MAD_Assignment</string>
+    <string name="play_button">Play</string>
+    <string name="title_text">Who\'s that Pokemon?</string>
+    <string name="score_format">Score: %d</string>
+    <string name="play_again">Play again</string>
+    <string name="you_scored">Your Score:</string>
+    <string name="header_text">Pokemon list</string>
+</resources>
