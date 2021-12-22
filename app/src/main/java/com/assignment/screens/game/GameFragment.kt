@@ -72,11 +72,12 @@ class GameFragment : Fragment() {
                 else -> R.drawable.pikachu
             }
         )
+
+        binding.pokemonName.visibility = View.GONE
+
+
         binding.hintButton.setOnClickListener {
-            pokemon_name.visibility = View.VISIBLE
-        }
-        binding.apply {
-            pokemonName.visibility = View.GONE
+                binding.pokemonName.visibility = View.VISIBLE
         }
         viewModel.eventGameFinish.observe(viewLifecycleOwner, Observer { hasFinished ->
             if (hasFinished) gameFinished()
@@ -90,6 +91,7 @@ class GameFragment : Fragment() {
                 "clefairy" -> R.drawable.clefairy
                 else -> R.drawable.pikachu
             }
+            binding.pokemonName.visibility = View.GONE
             binding.pokemonImage.setImageResource(drawableResource)
         }
         return binding.root
